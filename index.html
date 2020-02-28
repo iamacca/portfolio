@@ -7,32 +7,17 @@
 <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <script src="https://kit.fontawesome.com/9e4a871c33.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
-<!-- Script jquery -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+<script>AOS.init();</script>
 
-<script>
-    $(document).ready(function(){
-
-      $(".bar, .bar-last").each(function(){
-        $(this).find(".bar-inner").animate({
-          width: $(this).attr("data-width")
-        },2000)
-      });
-
-  });
-
-</script>
-
-<!-- partial:index.partial.html -->
 <script src="https://use.typekit.net/ehh4lya.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -67,12 +52,12 @@
     <div class="section__inner">
         <div class="block">
             <a class="pre" href="#about"><span>#1</span>About me</a>
-            <h1>Product Designer,<br>
-            	UX/UI Specialist,<br>
-                Information Architect and a budding photographer.
+            <h1><span class="none" data-aos="fade">Product Designer</span>,<br>
+            	<span data-aos="fade">UX/UI Specialist</span>,<br>
+                <span data-aos="fade">Information Architect</span> and a <span data-aos="fade">budding photographer</span>.
                 </h1>
             <p class="lead">
-                In essence I am a kind-hearted guy that likes to design.
+                In essence I am a <span data-aos="fade">kind-hearted guy</span> that likes to design.
             </p>
         </div>
     </div>
@@ -87,52 +72,32 @@
         <div class="block">
 
             <a class="pre" href="#skills"><span>#2</span>Skills</a>
-<!--
-            <p>Adobe Creative Suite</p>
-              <div class="bar" data-width="99%">
-              	<div class="bar-inner"></div>
-              </div>
 
-            <p>InVision Studio</p>
-              <div class="bar" data-width="99%">
-                <div class="bar-inner"></div>
-              </div>
-
-            <p>CMS</p>
-              <div class="bar" data-width="99%">
-                <div class="bar-inner"></div>
-              </div>
-
-            <p>HTML & CSS</p>
-              <div class="bar-last" data-width="55%">
-                <div class="bar-inner"></div>
-              </div>
--->
-          <div data-aos="fade-right">
+          <div>
             <p class="h3">UX + UI Design</p>
               <div class="bar" data-width="99%">
-                <div class="bar-inner"></div>
+                <div class="bar-inner-ux" data-aos="fade-right"></div>
               </div>
           </div>
 
-          <div data-aos="fade-right">
+          <div>
               <p class="h3">Interaction Design</p>
               <div class="bar" data-width="99%">
-                <div class="bar-inner"></div>
+                <div class="bar-inner-id" data-aos="fade-right"></div>
               </div>
           </div>
 
-          <div data-aos="fade-right">
+          <div>
             <p class="h3">Information Architecture</p>
               <div class="bar" data-width="99%">
-                <div class="bar-inner"></div>
+                <div class="bar-inner-ia" data-aos="fade-right"></div>
               </div>
           </div>
 
-          <div data-aos="fade-right">
+          <div>
             <p class="h3">UX Writing</p>
               <div class="bar-last" data-width="80%">
-                <div class="bar-inner"></div>
+                <div class="bar-inner-uxw" data-aos="fade-right"></div>
               </div>
           </div>
             
@@ -195,7 +160,19 @@
         </div>
     </div>
 </section>
-<!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<footer>
+
+    <p class="tooltip">Made with
+      <span class="relative">
+        <i class="fas fa-heart"></i>
+         <span class="tooltiptext"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQFRG1QjT7M_Bw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=kQJIw5F-RHvuISzHTNAohICbeA5b0IUmrzD2l6yHQE0" alt="Andrea-Accatino-pic" style="width: 100px;"></span>
+      </span> by Me in 2020</p>
+
+<!--
+  <p>Made with <i class="fas fa-heart"></i> by <a href="#">Me</a> in 2020</p>
+-->
+</footer>
 </body>
 </html>

@@ -309,6 +309,17 @@ a {
 .section.section--contact svg {
   fill: white;
 }
+footer p {
+  background-color: #343436;
+  color: white;
+  font-size: .500rem;
+  text-align: right;
+  padding: 2em 2em 2em 0;
+}
+
+footer i {
+  color: red;
+}
 
 /**
  * Typo
@@ -331,7 +342,7 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h5 a {
 h1 a:hover, .h1 a:hover, h2 a:hover, .h2 a:hover, h3 a:hover, .h3 a:hover, h4 a:hover, .h5 a:hover {
   border-bottom: .1875rem solid;
 }
-h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h5 span {
+h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h5 span, p span {
   color: #de5f5f;
 }
 
@@ -435,10 +446,11 @@ p a:hover {
   border-radius: 5px;
   background: #DE5F5E;
   box-shadow: inset 1px 1px 3px #bd5150, 
-            inset -1px -1px 3px #ff6d6c;
+              inset -1px -1px 3px #ff6d6c;
   margin: 0 0 1.5em;
   position: relative;
   transition: all 2s linear;
+  overflow: hidden;
 }
 
 .bar-last {
@@ -448,17 +460,84 @@ p a:hover {
   border-radius: 5px;
   background: #DE5F5E;
   box-shadow: inset 1px 1px 3px #bd5150, 
-            inset -1px -1px 3px #ff6d6c;
+              inset -1px -1px 3px #ff6d6c;
   margin: 0 0 2em;
   position: relative;
   transition: all 2s linear;
+  overflow: hidden;
 }
 
 .bar-inner {
-  width: 0;
+  width: 0%;
   height: 5px;
   background: #fff;
   border-radius: 5px;
+}
+
+.bar-inner-ux {
+  width: 99%;
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.bar-inner-id {
+  width: 99%;
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.bar-inner-ia {
+  width: 99%;
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.bar-inner-uxw {
+  width: 80%;
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.relative {
+  position: relative;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -150px;
+  right: 50%;
+  transform: translateX(50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 
